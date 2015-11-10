@@ -11,6 +11,7 @@
 				<tr>
 					<th>Title</th>
 					<th>Content</th>
+					<th></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -18,6 +19,9 @@
 					<tr>
 						<td><a href="{{ route('tasks.show', $task->slug) }}">{{ $task->title }}</a></td>
 						<td>{{ $task->content }}</td>
+						<td>
+							<a href="{{ route('tasks.edit', $task->slug) }}" class="btn btn-primary">Edit</a>
+						</td>
 					</tr>
 				@endforeach
 			</tbody>

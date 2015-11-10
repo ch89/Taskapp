@@ -32,4 +32,16 @@ class TasksController extends Controller
 
 		return redirect()->route('tasks.index');
 	}
+
+
+	public function edit(Task $task) {
+		return view('tasks.edit')->with('task', $task);
+	}
+
+
+	public function update(TaskRequest $request, Task $task) {
+		$task->update($request->all());
+
+		return redirect()->route('tasks.index');
+	}
 }
