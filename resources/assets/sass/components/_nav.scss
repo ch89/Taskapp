@@ -1,0 +1,59 @@
+#bootstrap-theme {
+	.navbar-default {
+		border: 0;
+		background-color: #fff;
+		box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+		margin: 0;
+	}
+
+	.navbar-brand {
+		@extend %navbar-buttons;
+
+		font-size: 22px;
+	}
+
+	.navbar-nav a {
+		@extend %navbar-buttons;
+
+		font-size: 17px;
+		@include transition(color, .5s);
+
+		&:hover {
+			color: $primary-color;
+		}
+	}
+
+	.navbar-collapse {
+		max-height: none;
+
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+
+	.navbar-nav {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.navbar-toggle {
+		margin-top: 22px;
+		margin-bottom: 22px;
+		border-width: 2px;
+	}
+
+	.dropdown-menu {
+		padding: 0;
+	}
+
+	.open > a {
+		background-color: #eee;
+	}
+
+	.dropdown-menu a {
+		line-height: 50px;
+
+		&:hover {
+			background-color: transparent;
+		}
+	}
+}

@@ -1,0 +1,51 @@
+#bootstrap-theme .navbar-brand, #bootstrap-theme .navbar-nav a {
+  color: #333;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0 20px;
+  line-height: 80px;
+  height: auto; }
+
+#bootstrap-theme .navbar-default {
+  border: 0;
+  background-color: #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  margin: 0; }
+
+#bootstrap-theme .navbar-brand {
+  font-size: 22px; }
+
+#bootstrap-theme .navbar-nav a {
+  font-size: 17px;
+  transition: color 0.5s; }
+  #bootstrap-theme .navbar-nav a:hover {
+    color: #41C4AB; }
+
+#bootstrap-theme .navbar-collapse {
+  max-height: none;
+  box-shadow: none; }
+
+#bootstrap-theme .navbar-nav {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+#bootstrap-theme .navbar-toggle {
+  margin-top: 22px;
+  margin-bottom: 22px;
+  border-width: 2px; }
+
+#bootstrap-theme .dropdown-menu {
+  padding: 0; }
+
+#bootstrap-theme .open > a {
+  background-color: #eee; }
+
+#bootstrap-theme .dropdown-menu a {
+  line-height: 50px; }
+  #bootstrap-theme .dropdown-menu a:hover {
+    background-color: transparent; }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif; }
+
+/*# sourceMappingURL=app.css.map */

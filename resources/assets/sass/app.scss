@@ -1,2 +1,9 @@
-// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import 'helpers/variables';
+@import 'helpers/placeholders';
+@import 'helpers/mixins';
 
+@import 'components/nav';
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
