@@ -2,8 +2,9 @@
 
 namespace App\Providers;
 
-use Illuminate\Routing\Router;
+use App\Task;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+use Illuminate\Routing\Router;
 
 class RouteServiceProvider extends ServiceProvider
 {
@@ -24,7 +25,9 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot(Router $router)
     {
-        //
+        $router->bind('tasks', function($slug) {
+            return Task::where('slug', $slug)->firstOrFail();
+        });
 
         parent::boot($router);
     }

@@ -6,6 +6,10 @@
   line-height: 80px;
   height: auto; }
 
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 80px; }
+
 .btn-custom {
   color: #fff;
   font-size: 17px;
@@ -174,9 +178,5 @@
   @media (min-width: 768px) {
     #contact .info {
       padding: 50px; } }
-
-body {
-  font-family: 'Source Sans Pro', sans-serif;
-  margin-top: 80px; }
 
 /*# sourceMappingURL=app.css.map */

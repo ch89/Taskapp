@@ -2,14 +2,10 @@
 @import 'helpers/placeholders';
 @import 'helpers/mixins';
 
+@import 'components/base';
 @import 'components/buttons';
 @import 'components/nav';
 @import 'components/carousel';
 @import 'components/services';
 @import 'components/references';
 @import 'components/contact';
-
-body {
-	font-family: 'Source Sans Pro', sans-serif;
-	margin-top: $navbar-height;
-}
