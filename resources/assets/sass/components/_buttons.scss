@@ -1,0 +1,14 @@
+.btn-custom {
+	color: #fff;
+	font-size: 17px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border: 2px solid #fff;
+	border-radius: 0;
+	@include transition(all, .5s);
+
+	&:hover {
+		color: $primary-color;
+		background-color: #fff;
+	}
+}

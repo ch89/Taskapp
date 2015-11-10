@@ -1,0 +1,16 @@
+#contact {
+	.map {
+		padding: 0;
+		height: 500px;
+	}
+
+	.info {
+		padding: 50px 15px;
+
+		@media (min-width: $break-medium) {
+			padding: 50px;
+		}
+	}
+
+
+}

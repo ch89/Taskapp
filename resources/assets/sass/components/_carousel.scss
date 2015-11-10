@@ -1,0 +1,55 @@
+#carousel {
+	.item {
+		height: 500px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.item:nth-of-type(1) {
+		background-image: url('/images/slide1.jpg');
+	}
+
+	.item:nth-of-type(2) {
+		background-image: url('/images/slide2.jpg');
+	}
+
+	.carousel-caption h1 {
+		font-size: 48px;
+		font-weight: 700;
+		text-transform: uppercase; 
+	}
+
+	.carousel-caption p {
+		font-size: 22px;
+		font-weight: 300;
+		margin-bottom: 20px;
+	}
+
+	.carousel-caption span {
+		color: $primary-color;
+	}
+
+	/*----Fade----*/
+
+	.item {
+		transition-property: opacity;
+	}
+
+	.item, .active.left, .active.right {
+		opacity: 0;
+	}
+
+	.active, .next.left, .prev.right {
+		opacity: 1;
+	}
+
+	.next, .prev, .active.left, .active.right {
+		left: 0;
+		transform: translate3d(0, 0, 0);
+	}
+
+	.carousel-control {
+		z-index: 2;
+	}
+}

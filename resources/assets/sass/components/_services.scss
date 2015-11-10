@@ -1,0 +1,47 @@
+#services {
+	padding: 100px 0;
+	text-align: center;
+
+	h1 {
+		margin-top: 0;
+		font-size: 32px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	i {
+		color: $primary-color;
+	}
+
+	h2 {
+		font-size: 22px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	p {
+		font-size: 22px;
+		font-weight: 300;
+		margin-bottom: 0;
+	}
+
+	.row > * {
+		margin-top: 40px;
+
+		@media (min-width: $break-medium) {
+			margin-top: 20px;
+		}
+	}
+}
+
+.light {
+	max-width: 50px;
+	border-width: 3px;
+	border-color: $primary-color;
+	margin-bottom: 0;
+}
+
+.empty {
+	font-size: 22px;
+	font-weight: 300;
+}

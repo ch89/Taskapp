@@ -2,6 +2,7 @@
 
 @section('content')
 
+<div class="container">
 	<h1>Tasks</h1>
 
 	@if($tasks->count())
@@ -26,5 +27,6 @@
 	@endif
 
 	<a href="tasks/create" class="btn btn-primary">New</a>
+</div>
 
 @stop
